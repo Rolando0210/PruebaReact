@@ -1,0 +1,187 @@
+.logo {
+    float: left;
+    width: 220px;
+    height: 60px;
+    margin: 0 10px 10px 0;
+}
+
+.footer-digishot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px 0 0;
+    font-size: 12px;
+}
+
+.dashboard-layout {
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    padding: 0;
+}
+
+.dashboard-dropdown {
+    float: right;
+    padding-right: 4%
+}
+
+.color-letter-dropdown {
+    color: white;
+}
+
+.dashboard-content {
+    display: flex;
+}
+
+.dashboard-component-layout {
+    padding: 30px 25px 25px;
+}
+
+.dashboard-component-content {
+    background: white;
+    padding: 24px;
+    margin: 0;
+    min-height: 280px;
+}
+
+[data-theme="dark"] .site-layout .dashboard-component-content {
+    background: black;
+}
+
+.workflow-content-container {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .dashboard-responsive-sidebar-container {
+        position: relative;
+    }
+
+    .dashboard-responsive-sidebar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 100
+    }
+
+    .dashboard-component-content {
+        padding: 12px;
+    }
+
+    .workflow-content-container {
+        padding: 0;
+    }
+
+    .footer-digishot {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding: 10px 5px 0;
+    }
+
+    .footer-digishot-qr {
+        padding: 10px 0;
+    }
+}
+
+@media (pointer: coarse) {
+
+    @media (orientation: landscape) {
+
+        .dashboard-component-layout {
+            padding: 0;
+        }
+
+        .dashboard-component-content {
+            padding: 0;
+        }
+
+        .workflow-content-container {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .workflow-content-container .workflow-content-title {
+            display: none;
+        }
+    }
+
+    .workflow-container {
+        display: block;
+    }
+
+    .workflow-menu-container {
+        display: none;
+    }
+
+    .workflow-content-container {
+        max-width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+  }
+  
+  .group-style-content {
+    text-align: center;
+    height: "100vh";
+    position: relative;
+    line-height: "120px";
+    color: "#fff";
+  }
+  
+  .button-transaction-excel .ant-btn-primary {
+    background: green;
+    border-color: green;
+  }
+  
+  .button-transaction-excel .ant-btn-primary:hover,
+  .button-transaction-excel .ant-btn-primary:focus,
+  .button-transaction-excel .ant-btn-primary:active {
+    color: #fff;
+    border-color: #3f963f !important;
+    background: #3f963f !important;
+  }
+  
+  .section-information-personal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  
+  .section-select-group-login {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .range-picker-container {
+    text-align: left; 
+  }
+  
+  @media (max-width: 576px) {
+    .range-picker-col {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .group-style-content {
+      padding: 0;
+    }
+  }
+  
+  .description-rows-title table > tbody > tr > th {
+    background-color: #e1e1e1 !important;
+  }
